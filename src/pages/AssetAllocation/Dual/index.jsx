@@ -11,7 +11,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 import { dualAllocOptionState } from "../../../recoil/allocationAtom";
-import { DualOffensiveUniverse, DualDefensiveUniverse } from "../../../utils/assetAllocationConfig";
+import { DualVaaOffensiveUniverse, DefensiveUniverse } from "../../../utils/assetAllocationConfig";
 
 function Dual() {
   const [dualAllocOption, setDualAllocOption] = useRecoilState(dualAllocOptionState);
@@ -53,7 +53,7 @@ function Dual() {
             value={dualAllocOption.assets.offensive1}
             onChange={(e) => handleAssetChange(e.target.value, "offensive1")}
           >
-            {DualOffensiveUniverse.map((universe) => (
+            {DualVaaOffensiveUniverse.map((universe) => (
               <MenuItem
                 key={universe.value}
                 value={universe.value}
@@ -86,7 +86,7 @@ function Dual() {
             value={dualAllocOption.assets.offensive2}
             onChange={(e) => handleAssetChange(e.target.value, "offensive2")}
           >
-            {DualOffensiveUniverse.map((universe) => (
+            {DualVaaOffensiveUniverse.map((universe) => (
               <MenuItem
                 key={universe.value}
                 value={universe.value}
@@ -120,7 +120,7 @@ function Dual() {
           value={dualAllocOption.assets.defensive}
           onChange={(e) => handleAssetChange(e.target.value, "defensive")}
         >
-          {DualDefensiveUniverse.map((universe) => (
+          {DefensiveUniverse.map((universe) => (
             <MenuItem
               key={universe.value}
               value={universe.value}
