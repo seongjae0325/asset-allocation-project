@@ -83,6 +83,93 @@ export const DualVaaOffensiveUniverse = [
   },
 ];
 
+export const DaaOffensiveUniverse = [
+  {
+    value: "spy",
+    label: "SPY",
+  },
+  {
+    value: "iwm",
+    label: "IWM",
+  },
+  {
+    value: "qqq",
+    label: "QQQ",
+  },
+  {
+    value: "kospi",
+    label: "KOSPI",
+  },
+  {
+    value: "kosdaq",
+    label: "KOSDAQ",
+  },
+  {
+    value: "gld",
+    label: "GLD",
+  },
+  {
+    value: "vea",
+    label: "VEA",
+  },
+  {
+    value: "tlt",
+    label: "TLT",
+  },
+  {
+    value: "agg",
+    label: "AGG",
+  },
+  {
+    value: "lqd",
+    label: "LQD",
+  },
+  {
+    value: "vgk",
+    label: "VGK",
+  },
+  {
+    value: "vnq",
+    label: "VNQ",
+  },
+  {
+    value: "ewj",
+    label: "EWJ",
+  },
+  {
+    value: "vwo",
+    label: "VWO",
+  },
+  {
+    value: "gsg",
+    label: "GSG",
+  },
+  {
+    value: "hyg",
+    label: "HYG",
+  },
+];
+
+export const DaaCanaryUniverse = [
+  ...DaaOffensiveUniverse,
+  {
+    value: "shy",
+    label: "SHY",
+  },
+  {
+    value: "ief",
+    label: "IEF",
+  },
+  {
+    value: "ust",
+    label: "UST",
+  },
+  {
+    value: "bnd",
+    label: "BND",
+  },
+];
+
 export const DefensiveUniverse = [
   {
     value: "agg",
@@ -131,5 +218,28 @@ export const VaaAllocOptions = {
     defensive1: "lqd",
     defensive2: "shy",
     defensive3: "ief",
+  },
+};
+
+export const DaaAllocOptions = {
+  type: "DAA",
+  assets: {
+    offensive1: "spy",
+    offensive2: "iwm",
+    offensive3: "qqq",
+    offensive4: "vgk",
+    offensive5: "ewj",
+    offensive6: "vwo",
+    offensive7: "vnq",
+    offensive8: "gsg",
+    offensive9: "gld",
+    offensive10: "tlt",
+    offensive11: "hyg",
+    offensive12: "lqd",
+    defensive1: "shy",
+    defensive2: "ief",
+    defensive3: "lqd",
+    canary1: "vwo",
+    canary2: "bnd",
   },
 };
