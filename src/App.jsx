@@ -2,7 +2,8 @@ import { BrowserRouter } from "react-router-dom";
 
 import Router from "./routes";
 import ThemeConfig from "./theme";
-import Header from "./layout/Header/index"
+import Header from "./layout/Header"
+import Footer from "./layout/Footer"
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <ThemeConfig>
         <Header/>
         <Router />
+        <Footer/>
       </ThemeConfig>
     </BrowserRouter>
   );
