@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import { useRecoilValue } from "recoil";
 
 import Static from "./Static";
+import Dual from "./Dual";
 import AssetAllocationSelect from "./AssetAllocationSelect";
 import BacktestRunForm from "./BacktestRunForm";
 import Page from "../../Components/Page";
@@ -16,6 +17,7 @@ function AssetAllocation() {
       <Container maxWidth="lg" sx={{ pt: 35 }}>
         <AssetAllocationSelect />
         {selectedAlgorithmValue === "Static" && <Static />}
+        {selectedAlgorithmValue === "Dual" && <Dual />}
         <DatePicker />
         <BacktestRunForm />
       </Container>
