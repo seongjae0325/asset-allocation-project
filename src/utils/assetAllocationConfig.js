@@ -40,7 +40,7 @@ export const RebalFrequencyMenuItems = [
   },
 ];
 
-export const DualOffensiveUniverse = [
+export const DualVaaOffensiveUniverse = [
   {
     value: "spy",
     label: "SPY",
@@ -83,7 +83,7 @@ export const DualOffensiveUniverse = [
   },
 ];
 
-export const DualDefensiveUniverse = [
+export const DefensiveUniverse = [
   {
     value: "agg",
     label: "AGG",
@@ -119,4 +119,17 @@ export const DualAllocOptions = {
     defensive: "agg",
   },
   momentum: "12",
+};
+
+export const VaaAllocOptions = {
+  type: "VAA",
+  assets: {
+    offensive1: "spy",
+    offensive2: "efa",
+    offensive3: "agg",
+    offensive4: "vea",
+    defensive1: "lqd",
+    defensive2: "shy",
+    defensive3: "ief",
+  },
 };
