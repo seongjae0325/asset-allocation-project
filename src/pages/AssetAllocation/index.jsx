@@ -3,6 +3,7 @@ import { useRecoilValue } from "recoil";
 
 import Static from "./Static";
 import Dual from "./Dual";
+import Vaa from "./Vaa";
 import AssetAllocationSelect from "./AssetAllocationSelect";
 import BacktestRunForm from "./BacktestRunForm";
 import Page from "../../Components/Page";
@@ -18,6 +19,7 @@ function AssetAllocation() {
         <AssetAllocationSelect />
         {selectedAlgorithmValue === "Static" && <Static />}
         {selectedAlgorithmValue === "Dual" && <Dual />}
+        {selectedAlgorithmValue === "VAA" && <Vaa />}
         <DatePicker />
         <BacktestRunForm />
       </Container>
