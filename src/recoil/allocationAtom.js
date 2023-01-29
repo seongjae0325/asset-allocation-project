@@ -1,6 +1,6 @@
 import { atom } from "recoil";
 import { dateStringConverter } from "../utils/formatDate";
-import { StaticAllocOptions } from "../utils/assetAllocationConfig";
+import { StaticAllocOptions, DualAllocOptions } from "../utils/assetAllocationConfig";
 
 export const strategyNameState = atom({
   key: "strategyNameState",
@@ -25,4 +25,9 @@ export const dateRangeEndState = atom({
 export const staticAllocOptionState = atom({
   key: "staticAllocOptionState",
   default: StaticAllocOptions,
+});
+
+export const dualAllocOptionState = atom({
+  key: "dualAllocOptionState",
+  default: DualAllocOptions,
 });

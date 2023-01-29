@@ -40,6 +40,68 @@ export const RebalFrequencyMenuItems = [
   },
 ];
 
+export const DualOffensiveUniverse = [
+  {
+    value: "spy",
+    label: "SPY",
+  },
+  {
+    value: "efa",
+    label: "EFA",
+  },
+  {
+    value: "qqq",
+    label: "QQQ",
+  },
+  {
+    value: "kospi",
+    label: "KOSPI",
+  },
+  {
+    value: "kosdaq",
+    label: "KOSDAQ",
+  },
+  {
+    value: "gld",
+    label: "GLD",
+  },
+  {
+    value: "vnq",
+    label: "VNQ",
+  },
+  {
+    value: "tlt",
+    label: "TLT",
+  },
+  {
+    value: "agg",
+    label: "AGG",
+  },
+  {
+    value: "vea",
+    label: "VEA",
+  },
+];
+
+export const DualDefensiveUniverse = [
+  {
+    value: "agg",
+    label: "AGG",
+  },
+  {
+    value: "lqd",
+    label: "LQD",
+  },
+  {
+    value: "shy",
+    label: "SHY",
+  },
+  {
+    value: "ief",
+    label: "IEF",
+  },
+];
+
 export const StaticAllocOptions = {
   type: "Static",
   assets: [],
@@ -47,4 +109,14 @@ export const StaticAllocOptions = {
     rebalancing_freq: "",
     rebalancing_band: "",
   },
+};
+
+export const DualAllocOptions = {
+  type: "Dual",
+  assets: {
+    offensive1: "spy",
+    offensive2: "efa",
+    defensive: "agg",
+  },
+  momentum: "12",
 };
